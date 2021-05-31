@@ -14,6 +14,7 @@ Table of contents
 11. search
 12. portfolio
 13. selection colour
+14. Font Awesome Code
 
 --------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
@@ -1313,11 +1314,24 @@ Services Style
   margin-left: 75px;
   margin-right: 75px;
 }
-
-.our-services .container-fluid {
-  padding: 0px 80px;
+@media screen and (max-width: 600px){
+  .our-services .section-heading {
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }
 
+.our-services  {
+  padding: 0px 80px;
+}
+@media screen and (max-width: 600px){
+  .our-services .container-fluid {
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
 .service-item {
   padding: 60px 30px;
   border: 2px solid #f7f7f7;
@@ -1719,3 +1733,4 @@ Scrollbar colour
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+
