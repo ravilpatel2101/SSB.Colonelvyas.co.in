@@ -53,7 +53,10 @@ let quiz = [
     },
     {
         question: "Choose the correct HTML tag for the largest heading",
-        option: ["<heading>", "<h6>", "<head>", "<h1>"],
+        option: ["<heading>", "<h6>", "<head>
+<link rel="shortcut icon" href="https://ssb.colonelvyas.co.in/assets/images/logo-icon.png" type="">
+  <link href="https://ssb.colonelvyas.co.in/assets/images/logo-icon.png" rel="apple-touch-icon">
+", "<h1>"],
         answer: 4,
     },
     {
