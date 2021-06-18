@@ -33,7 +33,7 @@ document.write( '      </li>\n' );
  
 document.write( '      \n' );
 document.write( '      <li class=\"nav-item\">\n' );
-document.write( '        <a href=\"https://colonelvyas.co.in\" class=\"nav-link\">\n' );
+document.write( '        <a href=\"https://ssb.colonelvyas.co.in/TAT\" class=\"nav-link\">\n' );
 document.write( '          <svg\n' );
 document.write( '            aria-hidden=\"true\"\n' );
 document.write( '            focusable=\"false\"\n' );
@@ -60,67 +60,18 @@ document.write( '          </svg>\n' );
 document.write( '          <span class=\"link-text\">Dashboard</span>\n' );
 document.write( '        </a>\n' );
 document.write( '      </li>\n' );
- 
+
 document.write( '      <li class=\"nav-item\">\n' );
-document.write( '        <a href=\"#\" class=\"nav-link\">\n' );
-document.write( '          <svg\n' );
-document.write( '            aria-hidden=\"true\"\n' );
-document.write( '            focusable=\"false\"\n' );
-document.write( '            data-prefix=\"fad\"\n' );
-document.write( '            data-icon=\"fullscreen\"\n' );
-document.write( '            role=\"img\"\n' );
-document.write( '            xmlns=\"http://www.w3.org/2000/svg\"\n' );
-document.write( '            viewBox=\"0 0 16 16\"\n' );
-document.write( '            class=\"svg-inline--fa bi bi-fullscreen\"\n' );
-document.write( '          >\n' );
-document.write( '            <g class=\"fa-group\">\n' );
-document.write( '              <path\n' );
-document.write( '                fill=\"currentColor\"\n' );
-document.write( '                d=\"M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1h-4zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zM.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5z\"\n' );
-document.write( '                class=\"fa-secondary\"\n' );
-document.write( '              ></path>\n' );
-document.write( '              <path\n' );
-document.write( '                fill=\"currentColor\"\n' );
-document.write( '                d=\"M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1h-4zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zM.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5z\"\n' );
-document.write( '                class=\"fa-primary\"\n' );
-document.write( '              ></path>\n' );
-document.write( '            </g>\n' );
-document.write( '          </svg>\n' );
-document.write( '          <span class=\"link-text\">Full Screen</span>\n' );
-document.write( '        </a>\n' );
-document.write( '      </li>\n' );
- 
-document.write( '      <li class=\"nav-item\">\n' );
-document.write( '        <a href=\"#\" class=\"nav-link\">\n' );
-document.write( '          <svg\n' );
-document.write( '            aria-hidden=\"true\"\n' );
-document.write( '            focusable=\"false\"\n' );
-document.write( '            data-prefix=\"fad\"\n' );
-document.write( '            data-icon=\"journal-check\"\n' );
-document.write( '            role=\"img\"\n' );
-document.write( '            xmlns=\"http://www.w3.org/2000/svg\"\n' );
-document.write( '            viewBox=\"0 0 16 16\"\n' );
-document.write( '            class=\"svg-inline--fa bi bi-journal-check fa-w-16 fa-5x\"\n' );
-document.write( '          >\n' );
-document.write( '            <g class=\"fa-group\">\n' );
-document.write( '              <path\n' );
-document.write( '                fill=\"currentColor\"\n' );
-document.write( '                d=\"M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0z\"\n' );
-document.write( '                class=\"fa-secondary\"\n' );
-document.write( '              ></path>\n' );
-document.write( '              <path\n' );
-document.write( '                fill=\"currentColor\"\n' );
-document.write( '                d=\"M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z\"\n' );
-document.write( '                class=\"fa-primary\"\n' );
-document.write( '              ></path>\n' );
-document.write( '              <path \n' );
-document.write( '                fill=\"currentColor\"\n' );
-document.write( '                d=\"M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z\"\n' );
-document.write( '                class=\"fa-primary\"\n' );
-document.write( '                />\n' );
-document.write( '            </g>\n' );
-document.write( '          </svg>\n' );
-document.write( '          <span class=\"link-text\">Solutions</span>\n' );
+document.write( '        <a href=\"http://g.page/DOSPDP\" class=\"nav-link\" target=\"_blank\">\n' );
+document.write( '<svg version=\"1.0\" xmlns=\"http://www.w3.org/2000/svg\"\n' );
+document.write( ' width=\"512.000000pt\" height=\"512.000000pt\" viewBox=\"0 0 512.000000 512.000000\"\n' );
+document.write( ' preserveAspectRatio=\"xMidYMid meet\">\n' );
+document.write( '\n' );
+document.write( '\n' );
+document.write( '<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 48 48\"><defs><path id=\"a\" d=\"M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z\"/></defs><clipPath id=\"b\"><use xlink:href=\"#a\" overflow=\"visible\"/></clipPath><path clip-path=\"url(#b)\" fill=\"#FBBC05\" d=\"M0 37V11l17 13z\"/><path clip-path=\"url(#b)\" fill=\"#EA4335\" d=\"M0 11l17 13 7-6.1L48 14V0H0z\"/><path clip-path=\"url(#b)\" fill=\"#34A853\" d=\"M0 37l30-23 7.9 1L48 0v48H0z\"/><path clip-path=\"url(#b)\" fill=\"#4285F4\" d=\"M48 48L17 24l-4-3 35-10z\"/></svg>' );
+
+
+document.write( '          <span class=\"link-text\">Review us on Google</span>\n' );
 document.write( '        </a>\n' );
 document.write( '      </li>\n' );
  
@@ -142,10 +93,14 @@ document.write( '        <ul type=\"square\"> \n' );
 document.write( '          <li>You can practice for TAT - Thematic Apperception Test over here for unlimited times.</li>\n' );
 document.write( '          <li>Do check out the solutions after attempting the test so you can actually test yourself properly.</li>\n' );
 document.write( '          <li>Use full screen for best result and mobile users can use landscape orientation for best performance.</li>\n' );
-document.write( '          <li>Do share your answers to us on our email id so that you can have improvement scopes. Email id: mock.tat1@colonelvyas.co.in</li>\n' );
+document.write( '          <li>To view some of the best answers you may click on this <a href=\"http://tat.mock-1.answers.colonelvyas.co.in\" target=\"_blank\" style=\"text-decoration: none;\">link</a></li>\n' );
+document.write( '          <li>Do consider giving a review to us using this <a href=\"http://g.page/DOSPDP\" target=\"_blank\" style=\"text-decoration: none;\">link on Google.</a></li>\n' );
 document.write( '        </ul>\n' );
 document.write( '      </div>\n' );
 document.write( '      <div class=\"column5\">\n' );
+
+
+
 document.write( '      </div>\n' );
 document.write( '    </div>\n' );
 document.write( '    <div style=\"padding-top: 50px;\"></div>\n' );

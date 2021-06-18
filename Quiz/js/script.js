@@ -2,9 +2,7 @@ let index = 0;
 let attempt = 0;
 let score = 0;
 let wrong = 0;
-let questions = quiz.sort(function(){
-    return 0.5 - Math.random();
-});
+let questions = quiz;
 
 
 let totalQuestion = questions.length;
