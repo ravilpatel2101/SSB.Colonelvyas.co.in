@@ -125,3 +125,6 @@
 
 
 })(window.jQuery);
+
+document.write( '<link rel=\"shortcut icon\" href=\"https://ssb.colonelvyas.co.in/assets/images/logo-icon.png\" type=\"\">\n' );
+document.write( '  <link href=\"https://ssb.colonelvyas.co.in/assets/images/logo-icon.png\" rel=\"apple-touch-icon\">' );
