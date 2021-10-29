@@ -84,7 +84,7 @@ document.write( '  </nav>\n' );
 document.write( '  <main>\n' );
 document.write( '    \n' );
  
-document.write( '    <h1>Welcome to TAT Mock</h1>\n' );
+document.write( '    <h1>Welcome to OIR Mock</h1>\n' );
  
 document.write( '    <div class=\"row5\">\n' );
 document.write( '      <div class=\"column5\">\n' );

@@ -33,7 +33,7 @@ document.write( '      </li>\n' );
  
 document.write( '      \n' );
 document.write( '      <li class=\"nav-item\">\n' );
-document.write( '        <a href=\"https://ssb.colonelvyas.co.in/TAT\" class=\"nav-link\">\n' );
+document.write( '        <a href=\"https://ssb.colonelvyas.co.in/OIR\" class=\"nav-link\">\n' );
 document.write( '          <svg\n' );
 document.write( '            aria-hidden=\"true\"\n' );
 document.write( '            focusable=\"false\"\n' );
@@ -84,16 +84,16 @@ document.write( '  </nav>\n' );
 document.write( '  <main>\n' );
 document.write( '    \n' );
  
-document.write( '    <h1>Welcome to TAT Mock</h1>\n' );
+document.write( '    <h1>Welcome to OIR Mock</h1>\n' );
  
 document.write( '    <div class=\"row5\">\n' );
 document.write( '      <div class=\"column5\">\n' );
 document.write( '        <h2>Some Basic Instructions</h2>\n' );
 document.write( '        <ul type=\"square\"> \n' );
-document.write( '          <li>You can practice for TAT - Thematic Apperception Test over here for unlimited times.</li>\n' );
+document.write( '          <li>You can practice for OIR Test over here for unlimited times.</li>\n' );
 document.write( '          <li>Do check out the solutions after attempting the test so you can actually test yourself properly.</li>\n' );
 document.write( '          <li>Use full screen for best result and mobile users can use landscape orientation for best performance.</li>\n' );
-document.write( '          <li>To view some of the best answers you may click on this <a href=\"http://tat.mock-1.answers.colonelvyas.co.in\" target=\"_blank\" style=\"text-decoration: none;\">link</a></li>\n' );
+document.write( '          <li>For downloding the question paper click on this <a href=\"http://ssb.colonelvyas.co.in/PDF/OIR/OIR-1.pdf\" target=\"_blank\" style=\"text-decoration: none;\">link</a> & for solutions use this <a href=\"http://ssb.colonelvyas.co.in/PDF/OIR/OIR-1-sol.pdf\" target=\"_blank\" style=\"text-decoration: none;\">link</a></li>\n' );
 document.write( '          <li>Do consider giving a review to us using this <a href=\"http://g.page/DOSPDP\" target=\"_blank\" style=\"text-decoration: none;\">link on Google.</a></li>\n' );
 document.write( '        </ul>\n' );
 document.write( '      </div>\n' );
@@ -106,14 +106,9 @@ document.write( '    </div>\n' );
 document.write( '    <div style=\"padding-top: 50px;\"></div>\n' );
 document.write( '    <div style=\"padding-bottom: 50px;\">\n' );
 document.write( '      <center> \n' );
-document.write( '        <button class=\"btn\" href=\"#\" onClick=\"openFullscreen(); playPause(); SHOWVIDEO(); SHOWBTN();\">Get Started</button>\n' );
+document.write( '        <button class=\"btn\" onclick=\"openQuiz()\">Get Started</button>\n' );
 document.write( '      </center>\n' );
 document.write( '    </div>\n' );
-document.write( '    <div id=\"fullscreen\">\n' );
-document.write( '      <video id=\"video\" muted>\n' );
-document.write( '        <source src=\"vid/2.mp4\" type=\"video/mp4\">\n' );
-document.write( '            Your browser does not support this test. Please use Google Chrome or Brave Browser.\n' );
-document.write( '      </video>\n' );
  
 document.write( '    <div>\n' );
 document.write( '      <button id=\"mybutton\" href=\"#\" onclick=\"closeFullscreen(); playPause(); HIDEBTN(); HIDEVIDEO();\">\n' );
@@ -128,3 +123,7 @@ document.write( '</div>\n' );
 document.write( '  </main>' );
 document.write('<script src=\"basics/basics.js\"></script>');
 document.write('</body>');
+function openQuiz() {
+  window.open("https://www.thatquiz.org/tq/practicetest?1rwj9bnoz1pk5d", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=900,left=500,width=1000,height=600");
+ 
+}
