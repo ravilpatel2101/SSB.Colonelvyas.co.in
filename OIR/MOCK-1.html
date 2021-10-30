@@ -4,12 +4,12 @@
 <link rel="shortcut icon" href="https://ssb.colonelvyas.co.in/assets/images/logo-icon.png" type="">
   <link href="https://ssb.colonelvyas.co.in/assets/images/logo-icon.png" rel="apple-touch-icon">
 
+<link href="css-file.css" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OIR MOCK TEST 1</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B8P0TZEQHG"></script>
     <script>
@@ -25,8 +25,102 @@
     <noscript>
         Please enable scripts, we would not be having any ads, but scripts are necessary for viewing the content and accessing it. If you are facing any issues, please mail us at issue.tat@colonelvyas.co.in . 
     </noscript>
+    <div id="adobe-dc-view"></div>
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script type="text/javascript">
+	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+		var adobeDCView = new AdobeDC.View({clientId: "f36609803b55481eb30f136b704a6f79", divId: "adobe-dc-view"});
+		adobeDCView.previewFile({
+			content:{location: {url: "https://ssb.colonelvyas.co.in/PDF/OIR/OIR-1.pdf"}},
+			metaData:{fileName: "OIR MOCK TEST-1"}
+		}, {defaultViewMode: "FIT_PAGE", showAnnotationTools: false, showLeftHandPanel: false, 
+			dockPageControls: false});
+	});
+</script>
+<div class="calloutR">
+  <div class="calloutR-header">Download PDF</div>
+  <span class="closebtnR" onclick="this.parentElement.style.display='none';">×</span>
+  <div class="calloutR-container">
+    <p>You can download this in PDF format by <a target="_blank" href="https://ssb.colonelvyas.co.in/PDF/OIR/OIR-1.pdf">Clicking Here</a> or close it if this is fine for you.</p>
+    <p>Solutions of the same are available by using <a target="_blank" href="https://ssb.colonelvyas.co.in/PDF/OIR/OIR-1-Sol.pdf">THIS LINK</a></p>
+  </div>
+</div>
 
+<div class="timer" id="OPTIMER">
+  <h3 style="font-size: 22px; color:rgb(46, 130, 226); text-align: center;">Timer(17 Min)</h3>
+  <p id="timer">17:00</p>
+    <div class="timer-options">
+      <button class="button-styleR button1R" onClick="HIDEstart()" id="startOP">Start</button>
+      <button class="button-styleR button1R" id="pauseOP">Pause</button>
+      <button class="button-styleR button1R" id="resumeOP">Resume</button>
+     </div>
+</div>
+<script>
+  var timer = document.getElementById("timer");
+var start = document.getElementById("startOP");
+var pause = document.getElementById("pauseOP");
+var resume = document.getElementById("resumeOP");
+var id;
+var value = "00:00";
+
+function startTimer(m, s) {
+    timer.textContent = m + ":" + s;
+    if (s == 0) {
+        if (m == 0) {
+            return;
+        } else if (m != 0) {
+            m = m - 1;
+            s = 60;
+        }
+    }
+    
+    s = s - 1;
+    id = setTimeout(function () {
+        startTimer(m, s)
+    }, 1000);
+}
+
+function pauseTimer() {
+    value = timer.textContent;
+    clearTimeout(id);
+}
+
+function resumeTimer() {
+    var t = value.split(":");
+    
+    startTimer(parseInt(t[0], 10), parseInt(t[1], 10));
+}
+
+start.addEventListener("click", function () {
+    startTimer(17, 0);
+}, false);
+
+pause.addEventListener("click", pauseTimer, false);
+
+resume.addEventListener("click", resumeTimer, false);
+
+function HIDEstart() {
+  var x = document.getElementById("startOP");
+  if (x.attr === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+ }
+}
+$( "#startOP" ).click(function() {
+   $(this).attr("disabled", "disabled");
+});
+
+
+$( "#pauseOP" ).click(function() {
+   $(this).attr("disabled", "disabled");
+   $("#").removeAttr("disabled");
+});
+$( "#resumeOP" ).click(function() {
+     $(this).attr("disabled", "disabled");
+     $("#pauseOP").removeAttr("disabled");
+});
+</script>
 <body>
-    <script src="js-content/1.js"></script>
 </body>
 </html>

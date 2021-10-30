@@ -1,0 +1,29 @@
+.calloutR { position: fixed; top: 55px; right: 20px; margin-left: 20px; max-width: 300px; } .calloutR-header { padding: 15px 15px; background: #33ccc5; font-size: 28px; color: white; } .calloutR-container { padding: 15px; background-color: #f2f2f2; color: black } .closebtnR { position: absolute; top: 5px; right: 15px; color: white; font-size: 30px; cursor: pointer; } .closebtnR:hover { color: lightgrey; }
+.timer{
+    position: fixed; bottom: 10px; right: auto; left:auto; border-style: solid;} 
+  #timer {font-size: 28px; color: Red; text-align: center;} 
+  .timer-options { padding: 5px; background-color: #f2f2f2; color: black } 
+  .closebtnR { position: absolute; top: 5px; right: 15px; color: white; font-size: 30px; cursor: pointer; } 
+  .closebtnR:hover { color: lightgrey;}
+  .button-styleR {
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button1R {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+  
+  .button1R:hover {
+    background-color: #4CAF50;
+    color: white;
+  }

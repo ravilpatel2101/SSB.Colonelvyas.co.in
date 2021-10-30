@@ -15,6 +15,7 @@ Table of contents
 12. portfolio
 13. selection colour
 14. Font Awesome Code
+15. Callout
 
 --------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
@@ -1732,5 +1733,41 @@ Scrollbar colour
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
+}
+/*
+Callout
+*/
+.calloutR {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+}
+
+.calloutR-header {
+  padding: 15px 15px;
+  background: #33ccc5;
+  font-size: 28px;
+  color: white;
+}
+
+.calloutR-container {
+  padding: 15px;
+  background-color: #f2f2f2;
+  color: black
+}
+
+.closebtnR {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtnR:hover {
+  color: lightgrey;
 }
 
