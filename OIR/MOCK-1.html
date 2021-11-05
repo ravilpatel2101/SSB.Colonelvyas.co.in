@@ -3,7 +3,7 @@
 <head>
 <link rel="shortcut icon" href="https://ssb.colonelvyas.co.in/assets/images/logo-icon.png" type="">
   <link href="https://ssb.colonelvyas.co.in/assets/images/logo-icon.png" rel="apple-touch-icon">
-
+  <link rel="stylesheet" href="https://ssb.colonelvyas.co.in/assets/css/main.css">
 <link href="css-file.css" rel="stylesheet">
 
     <meta charset="UTF-8">
@@ -19,11 +19,12 @@
 
       gtag('config', 'G-B8P0TZEQHG');</script>
       <script src="https://kit.fontawesome.com/b6f33f648a.js" crossorigin="anonymous"></script>
-
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/materia/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="jquery-countdown-timer-control.js"></script>
 
 </head>
-
-    <noscript>
+<noscript>
         Please enable scripts, we would not be having any ads, but scripts are necessary for viewing the content and accessing it. If you are facing any issues, please mail us at issue.tat@colonelvyas.co.in . 
     </noscript>
     <div id="adobe-dc-view"></div>
@@ -37,7 +38,27 @@
 		}, {defaultViewMode: "FIT_PAGE", showAnnotationTools: false, showLeftHandPanel: false, 
 			dockPageControls: false});
 	});
+
+  $(window).on('load', function() {
+
+$('#js-preloader').addClass('loaded');
+
+});
 </script>
+<body>
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+
+
 <div class="calloutR">
   <div class="calloutR-header">Download PDF</div>
   <span class="closebtnR" onclick="this.parentElement.style.display='none';">×</span>
@@ -47,132 +68,58 @@
   </div>
 </div>
 
-<div class="timer" id="OPTIMER mydiv5R">
-  <span class="closebtnR" style="color: black" onclick="this.parentElement.style.display='none';">×</span>
-  <h3 style="font-size: 22px; color:rgb(46, 130, 226); text-align: center;">Timer</h3>
-  <p id="timer">17:00</p>
-    <div class="timer-options">
-      <button class="button-styleR button1R" onClick="HIDEstart()" id="startOP"><i class="fas fa-pause"></i></button>
-      <button class="button-styleR button1R" id="pauseOP"><i class="fas fa-play"></i></button>
-      <button class="button-styleR button1R" id="resumeOP"><i class="fas fa-pause"></i></button>
-     </div>
+<div class="OPIESTTIMER">
+  <div class="popup" onclick="myFunction00()"><i class="fa fa-info-circle"></i>
+    <span class="popuptext" id="myPopup">Timer can be used for a proper mock test. 17 min timer given below. Click on Start Timer.</span>
+  </div>
+	<div class="timer timer1 alert alert-primary" data-minutes-left="17.01"></div><br>
+	<div id="controls">
+	<div class="timerstart btn btn-primary" style="font-size:18px;">start Timer</div>
+	<div class="timerpause btn btn-danger">pause</div>
+	<div class="timerreset btn btn-info">reset</div>
+	</div>
 </div>
 <div>
-  <a href="https://ssb.colonelvyas.co.in/PDF/OIR/OIR-1.pdf" target="_Blank"><button class="btn"><i class="fa fa-download"></i></button></a>
+  <a href="https://ssb.colonelvyas.co.in/PDF/OIR/OIR-1.pdf" target="_Blank"><button class="btnRA"><i class="fa fa-download"></i></button></a>
 </div>
 
 
+
+
 <script>
-  var timer = document.getElementById("timer");
-var start = document.getElementById("startOP");
-var pause = document.getElementById("pauseOP");
-var resume = document.getElementById("resumeOP");
-var id;
-var value = "00:00";
-
-function startTimer(m, s) {
-    timer.textContent = m + ":" + s;
-    if (s == 0) {
-        if (m == 0) {
-            return;
-        } else if (m != 0) {
-            m = m - 1;
-            s = 60;
-        }
-    }
-    
-    s = s - 1;
-    id = setTimeout(function () {
-        startTimer(m, s)
-    }, 1000);
+  //popup
+  function myFunction00() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
 }
 
-function pauseTimer() {
-    value = timer.textContent;
-    clearTimeout(id);
-}
+  $(function(){
+		//default
+		var timer0=$('.timer0').startTimer({}).trigger('start');
 
-function resumeTimer() {
-    var t = value.split(":");
-    
-    startTimer(parseInt(t[0], 10), parseInt(t[1], 10));
-}
+		//with control
+		var timer1=$('.timer1').startTimer({
+			onComplete: function(element){console.log('Complete');}
+			,onPause: $('.timerpause'),
+			onReset: $('.timerreset'),
+			onStart: $('.timerstart'),
+      loop: true
+		});
 
-start.addEventListener("click", function () {
-    startTimer(17, 0);
-}, false);
-
-pause.addEventListener("click", pauseTimer, false);
-
-resume.addEventListener("click", resumeTimer, false);
-
-function HIDEstart() {
-  var x = document.getElementById("startOP");
-  if (x.attr === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
- }
-}
-$( "#startOP" ).click(function() {
-   $(this).attr("disabled", "disabled");
-});
-
-
-$( "#pauseOP" ).click(function() {
-   $(this).attr("disabled", "disabled");
-   $("#").removeAttr("disabled");
-});
-$( "#resumeOP" ).click(function() {
-     $(this).attr("disabled", "disabled");
-     $("#pauseOP").removeAttr("disabled");
-});
+		//without control
+		var timer2=$('.timer2').startTimer({
+			onComplete: function(element){console.log('Complete');}
+			//,onPause: $('.timerpause'), //optional, pause control
+			//onReset: $('.timerreset'), //optional, reset control
+			//onStart: $('.timerstart') //optional, start control
+			//loop: true, //optional, enable loop
+			//loopInterval: 2 //optional
+		});
+		timer2.trigger('start'); //optional, use to start without control button
+		//timer2.trigger('pause'); //optional, use to pause without control button
+		//timer2.trigger('resetime'); //optional, use to reset without control button
+	})
 </script>
-<script>
-  //Make the DIV element draggagle:
-  dragElement(document.getElementById("OPTIMER"));
-  
-  function dragElement(elmnt) {
-    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-    if (document.getElementById(elmnt.id + "header")) {
-      /* if present, the header is where you move the DIV from:*/
-      document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-    } else {
-      /* otherwise, move the DIV from anywhere inside the DIV:*/
-      elmnt.onmousedown = dragMouseDown;
-    }
-  
-    function dragMouseDown(e) {
-      e = e || window.event;
-      e.preventDefault();
-      // get the mouse cursor position at startup:
-      pos3 = e.clientX;
-      pos4 = e.clientY;
-      document.onmouseup = closeDragElement;
-      // call a function whenever the cursor moves:
-      document.onmousemove = elementDrag;
-    }
-  
-    function elementDrag(e) {
-      e = e || window.event;
-      e.preventDefault();
-      // calculate the new cursor position:
-      pos1 = pos3 - e.clientX;
-      pos2 = pos4 - e.clientY;
-      pos3 = e.clientX;
-      pos4 = e.clientY;
-      // set the element's new position:
-      elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-      elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-    }
-  
-    function closeDragElement() {
-      /* stop moving when mouse button is released:*/
-      document.onmouseup = null;
-      document.onmousemove = null;
-    }
-  }
-  </script>
+
 <body>
-</body>
 </html>
