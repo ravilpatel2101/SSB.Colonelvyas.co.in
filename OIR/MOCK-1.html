@@ -17,8 +17,9 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-B8P0TZEQHG');
-    </script>
+      gtag('config', 'G-B8P0TZEQHG');</script>
+      <script src="https://kit.fontawesome.com/b6f33f648a.js" crossorigin="anonymous"></script>
+
 
 </head>
 
@@ -46,15 +47,21 @@
   </div>
 </div>
 
-<div class="timer" id="OPTIMER">
-  <h3 style="font-size: 22px; color:rgb(46, 130, 226); text-align: center;">Timer(17 Min)</h3>
+<div class="timer" id="OPTIMER mydiv5R">
+  <span class="closebtnR" style="color: black" onclick="this.parentElement.style.display='none';">×</span>
+  <h3 style="font-size: 22px; color:rgb(46, 130, 226); text-align: center;">Timer</h3>
   <p id="timer">17:00</p>
     <div class="timer-options">
-      <button class="button-styleR button1R" onClick="HIDEstart()" id="startOP">Start</button>
-      <button class="button-styleR button1R" id="pauseOP">Pause</button>
-      <button class="button-styleR button1R" id="resumeOP">Resume</button>
+      <button class="button-styleR button1R" onClick="HIDEstart()" id="startOP"><i class="fas fa-pause"></i></button>
+      <button class="button-styleR button1R" id="pauseOP"><i class="fas fa-play"></i></button>
+      <button class="button-styleR button1R" id="resumeOP"><i class="fas fa-pause"></i></button>
      </div>
 </div>
+<div>
+  <a href="https://ssb.colonelvyas.co.in/PDF/OIR/OIR-1.pdf" target="_Blank"><button class="btn"><i class="fa fa-download"></i></button></a>
+</div>
+
+
 <script>
   var timer = document.getElementById("timer");
 var start = document.getElementById("startOP");
@@ -121,6 +128,51 @@ $( "#resumeOP" ).click(function() {
      $("#pauseOP").removeAttr("disabled");
 });
 </script>
+<script>
+  //Make the DIV element draggagle:
+  dragElement(document.getElementById("OPTIMER"));
+  
+  function dragElement(elmnt) {
+    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    if (document.getElementById(elmnt.id + "header")) {
+      /* if present, the header is where you move the DIV from:*/
+      document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+    } else {
+      /* otherwise, move the DIV from anywhere inside the DIV:*/
+      elmnt.onmousedown = dragMouseDown;
+    }
+  
+    function dragMouseDown(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // get the mouse cursor position at startup:
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      document.onmouseup = closeDragElement;
+      // call a function whenever the cursor moves:
+      document.onmousemove = elementDrag;
+    }
+  
+    function elementDrag(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // calculate the new cursor position:
+      pos1 = pos3 - e.clientX;
+      pos2 = pos4 - e.clientY;
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      // set the element's new position:
+      elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+      elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    }
+  
+    function closeDragElement() {
+      /* stop moving when mouse button is released:*/
+      document.onmouseup = null;
+      document.onmousemove = null;
+    }
+  }
+  </script>
 <body>
 </body>
 </html>
