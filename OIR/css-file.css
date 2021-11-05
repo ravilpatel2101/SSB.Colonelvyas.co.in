@@ -45,7 +45,7 @@
   .container { margin: 150px auto; }
   
   .OPIESTTIMER{
-    position: absolute;
+    position: fixed;
     bottom: 10px; 
     left: 5px;
     padding: 15px;
