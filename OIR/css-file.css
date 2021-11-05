@@ -51,6 +51,7 @@
     padding: 15px;
     border-color: #0004ff;
     border: solid;
+    display: inline-block;
   }
 
   /*Info*/
