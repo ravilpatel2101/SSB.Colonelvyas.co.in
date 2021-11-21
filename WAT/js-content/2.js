@@ -33,7 +33,7 @@ document.write( '      </li>\n' );
  
 document.write( '      \n' );
 document.write( '      <li class=\"nav-item\">\n' );
-document.write( '        <a href=\"https://ssb.colonelvyas.co.in/TAT\" class=\"nav-link\">\n' );
+document.write( '        <a href=\"https://ssb.colonelvyas.co.in/WAT\" class=\"nav-link\">\n' );
 document.write( '          <svg\n' );
 document.write( '            aria-hidden=\"true\"\n' );
 document.write( '            focusable=\"false\"\n' );
@@ -93,8 +93,7 @@ document.write( '        <ul type=\"square\"> \n' );
 document.write( '          <li>You can practice for WAT - Word Association Test over here for free without any hazzle to login.</li>\n' );
 document.write( '          <li>Do analyse your own mistakes after the mock.</li>\n' );
 document.write( '          <li>Mobile users should use landscape orientation for best performance.</li>\n' );
-document.write( '          <li>To download the pdf of the same <a href=\"https://ssb.colonelvyas.co.in/WAT/PDF/MOCK-2.html\" target=\"_blank\" style=\"text-decoration: none;\">link</a></li>\n' );
-document.write( '          <li>Do consider giving a review to us using this <a href=\"http://colonelvyas.co.in/feedback\" target=\"_blank\" style=\"text-decoration: none;\">link on Google.</a></li>\n' );
+document.write( '          <li>Do consider giving a feedback to us using this <a href=\"http://colonelvyas.co.in/feedback\" target=\"_blank\" style=\"text-decoration: none;\">link.</a></li>\n' );
 document.write( '        </ul>\n' );
 document.write( '      </div>\n' );
 document.write( '      <div class=\"column5\">\n' );
