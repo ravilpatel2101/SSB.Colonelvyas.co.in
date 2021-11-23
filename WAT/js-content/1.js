@@ -33,7 +33,7 @@ document.write( '      </li>\n' );
  
 document.write( '      \n' );
 document.write( '      <li class=\"nav-item\">\n' );
-document.write( '        <a href=\"https://ssb.colonelvyas.co.in/TAT\" class=\"nav-link\">\n' );
+document.write( '        <a href=\"https://ssb.colonelvyas.co.in/WAT\" class=\"nav-link\">\n' );
 document.write( '          <svg\n' );
 document.write( '            aria-hidden=\"true\"\n' );
 document.write( '            focusable=\"false\"\n' );
